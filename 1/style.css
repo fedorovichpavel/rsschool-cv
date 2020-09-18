@@ -1,0 +1,65 @@
+body {
+	display: block;
+	margin: 20px 100px;
+	box-shadow: rgba(0, 0, 0, 0.5) 8px 8px 8px;
+	background: white url('bgbody.jpg') no-repeat fixed center;
+}
+
+.bg {background: rgba(250, 230, 230, 0.85);}
+
+.border{
+	border-bottom: 1px black solid;
+	margin:0 150px;
+}
+
+.cv {
+	text-align: center;
+	font-size: 25px;
+	padding: 0 100px;
+	margin:0 200px;
+	border-bottom: 2px black solid;
+}
+
+.top {
+	display: inline-flex;
+	padding: 30px 100px;
+}
+.leftside img{
+	width:300px;
+	box-shadow: rgba(0, 0, 0, 0.5) -8px -8px 8px;
+	border-radius: 5%;
+}
+.rigthside {
+	padding-left: 150px;
+}
+.rigthside h2 {font-size: 35px;}
+.rigthside h4 {font-size: 25px;}
+.rigthside p {font-size: 21px;}
+
+.bottom {
+	padding: 0px 100px;
+}
+
+.about h2{padding-left: 100px;}
+.about p{font-size:18px;}
+.about {
+	padding-left: 50px;
+}
+
+.code h2{padding-left: 100px;}
+.code p{font-size:18px;}
+.code {
+	padding-left: 50px;
+}
+
+.education h2{padding-left: 100px;}
+.education p{font-size:18px;}
+.education {
+	padding-left: 50px;
+}
+
+.english h2{padding-left: 100px;}
+.english p{font-size:18px;}
+.english {
+	padding-left: 50px;
+}
