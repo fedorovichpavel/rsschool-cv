@@ -8,17 +8,58 @@
     <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <title>CV - Fedorovich Pavel</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/default.min.css"
+    />
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
-        <div class="circle circle4"></div>
-
+        <nav class="menu">
+          <ul>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#lang">Languages</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#exp">Experience</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile-menu">
+          <input type="checkbox" id="checkbox" class="mobile-menu__checkbox" />
+          <label for="checkbox" class="mobile-menu__btn"
+            ><div class="mobile-menu__icon"></div
+          ></label>
+          <div class="mobile-menu__container">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="#contacts" class="menu-link">Contacts</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#skills" class="menu-link">Skills</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#about" class="menu-link">About</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#lang" class="menu-link">Languages</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#edu" class="menu-link">Education</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#exp" class="menu-link">Experience</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="circle circle5"></div>
         <div class="left_side">
-          <div class="avatar"><div></div></div>
+          <div class="avatar">
+            <img src="./assets/img/ava.jpg" alt="" />
+          </div>
         </div>
         <div class="right_side">
           <h1>Fedorovich <span class="name">Pavel</span></h1>
@@ -27,48 +68,53 @@
       </header>
       <main class="main">
         <div class="left_side">
-          <div class="contacts">
+          <div class="contacts" id="contacts">
             <h3>Contacts</h3>
-            <span
-              ><i class="fa fa-envelope-o" aria-hidden="true"></i>
-              <a href="mailto:fedorovich.pavel@mail.ru"
-                >fedorovich.pavel@mail.ru</a
-              ></span
-            >
-            <span
-              ><i class="fa fa-phone-square" aria-hidden="true"></i>
-              <a href="tel:+375257932021">+375257932021</a>
-            </span>
-            <span
-              ><i class="fa fa-telegram" aria-hidden="true"></i>
-              <a href="https://t.me/fedorovichpavel">@fedorovichpavel</a></span
-            >
-            <span
-              ><i class="fa fa-github" aria-hidden="true"></i>
-              <a href="https://github.com/fedorovichpavel">github</a></span
-            >
-            <span
-              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              <a href="https://www.linkedin.com/in/pavel-fedorovich-9003a8211/"
-                >linked</a
-              ></span
-            >
+            <ul>
+              <li>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="mailto:fedorovich.pavel@mail.ru"
+                  >fedorovich.pavel@mail.ru</a
+                >
+              </li>
+              <li>
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <a href="tel:+375257932021">+375257932021</a>
+              </li>
+              <li>
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+                <a href="https://t.me/fedorovichpavel">@fedorovichpavel</a>
+              </li>
+              <li>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="https://github.com/fedorovichpavel">github</a>
+              </li>
+              <li>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <a
+                  href="https://www.linkedin.com/in/pavel-fedorovich-9003a8211/"
+                  >linked</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="skills">
+          <div class="skills" id="skills">
             <h3>Skills</h3>
-            <span>HTML, CSS, SCSS</span>
-            <span>Javascript ES5, ES6+</span>
-            <span>Git/Github</span>
-            <span>Webpack, Rollup</span>
-            <span>ReactJS(Class, Func) NextJS, Redux</span>
+            <ul>
+              <li>HTML, CSS, SCSS</li>
+              <li>Javascript ES5, ES6+</li>
+              <li>Git/Github</li>
+              <li>Webpack, Rollup</li>
+              <li>ReactJS(Class, Func) NextJS, Redux</li>
+            </ul>
           </div>
-          <div class="lang">
+          <div class="lang" id="lang">
             <h3>Languages</h3>
             <span>Russian - Native</span>
             <span>English - A2</span>
           </div>
 
-          <div class="education">
+          <div class="education" id="edu">
             <h3>Education</h3>
             <span>The Rolling scopes school React JavaScript/Front-end</span>
             <a href="https://app.rs.school/certificate/m626my4n" target="_blank"
@@ -81,7 +127,7 @@
           </div>
         </div>
         <div class="right_side">
-          <div class="about">
+          <div class="about" id="about">
             <h3>About me</h3>
             <p>
               Hi! I am Junoir Front-end developer Javascript / React. I am
@@ -92,7 +138,7 @@
               work.
             </p>
           </div>
-          <div class="experience">
+          <div class="experience" id="exp">
             <h3>Experience</h3>
             <div class="experience_title">
               <h4>Leadsman project</h4>
@@ -138,6 +184,34 @@
               <strong>Tools</strong>: VSCode, Chrome Devtools, Github, Insomnia
             </p>
           </div>
+          <div class="Projects">
+            <h3>Projects</h3>
+            <div class="projects_item">
+              <div>
+                <h4>Travel App</h4>
+                <p>
+                  Application with some countries and information about it.
+                  Based on React/Typescript.
+                </p>
+              </div>
+              <a
+                href="https://fedorovichpavel.github.io/travel-app/index"
+                target="_blank"
+                ><img src="./assets/img/travel.png" alt="travel"
+              /></a>
+            </div>
+            <div class="projects_item">
+              <div>
+                <h4>Tetris</h4>
+                <p>Tetris mini games clone on JS with using Phaser3.</p>
+              </div>
+              <a
+                href="https://mikhail-hursky.github.io/rsclone/dist"
+                target="_blank"
+                ><img src="./assets/img/tetris.png" alt="tetris"
+              /></a>
+            </div>
+          </div>
           <div class="hobbies">
             <h3>Hobbies</h3>
             <p>Snowboarding</p>
@@ -145,9 +219,45 @@
             <p>Guitar</p>
             <p>Traveling</p>
           </div>
+          <div class="code">
+            <h3>Code</h3>
+            <pre><code class="hljs highlight language-javascript">function revrot(str, sz) {
+   if (str === "" || sz === 0 || str.length < sz) {
+     return ""}
+  let arr = [];
+  let string = str;
+  for (let i = str.length; i >= sz; i=i-sz) {
+    arr.push(string.slice(0, sz));
+    string = string.slice(sz);
+  }
+  arr = arr.map(e => {
+    if (e.split("").reduce((a,e)=> a+=e**3, 0) % 2 === 0) {
+      return e.split("").reverse().join("");
+    } else {
+       return e.slice(1)+e[0];
+    }
+  });
+  return arr.join("")
+}</code></pre>
+          </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <span
+          ><i class="fa fa-github" aria-hidden="true"></i>
+          <a href="https://github.com/fedorovichpavel">github</a></span
+        >
+        <div>
+          <span>2021</span>
+          <a href="https://rs.school/js/" target="_blank"
+            ><img src="./assets/img/rs_school_js.svg" alt=""
+          /></a>
+        </div>
+      </footer>
     </div>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
