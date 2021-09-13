@@ -499,9 +499,14 @@ footer {
     display: flex;
     font-size: 20px;
     height: 60%;
+    width: 170px;
     span {
       align-self: center;
       padding-right: 22px;
+    }
+    a {
+      width: 100%;
+      height: 100%;
     }
   }
 }
