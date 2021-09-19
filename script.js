@@ -19,3 +19,5 @@ url.forEach((e) => {
     checkbox.checked = false;
   });
 });
+
+console.log("150 points!");
